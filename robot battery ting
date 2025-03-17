@@ -1,0 +1,6 @@
+charge_list = []
+try:
+    charge = float(input("Enter your input: "))
+    while charge != -1:
+        charge_list.append(charge)
+        

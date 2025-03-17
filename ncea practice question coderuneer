@@ -1,0 +1,18 @@
+temp_list = []
+while True:
+    try:
+        temp = int(input("Enter the temperature: "))
+        if temp >= 0:
+            temp_list.append(charge)
+        elif temp == -1:
+            break
+
+            except ValueError:
+                print('Invalid temperature')
+for temp in temp_list:
+    if temp < 34:
+        print("too cold")
+    elif temp >= 34 and temp <= 42
+        print("just right")
+    else:
+        print("too hot")

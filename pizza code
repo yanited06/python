@@ -1,0 +1,31 @@
+""" This program will ask the amount for every flavours of pizza and print them, except if the amount is 0"""
+
+ignored_num = 0
+#list of pizza types
+flavours = ['cheese','chicken','pepperoni','veggie']
+amounts = {}
+
+for flavour in flavours:
+
+    while True:
+        try:
+
+            pizza = input(f'How many {flavour} pizzas do you want? ')
+
+            if '.' in pizza or ',' in pizza or '-' in pizza:
+                raise ValueError
+            
+            pizza = int(pizza)
+
+            amounts[flavour] = pizza
+            break
+        
+        except Exception:
+            print('Please enter a vaild input')
+
+for flavour in amounts:
+
+    pizza_amount = amounts[flavour]
+
+    if pizza_amount > 0:
+        print(f'{flavour.title()}: {pizza_amount}')
