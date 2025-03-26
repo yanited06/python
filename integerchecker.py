@@ -18,4 +18,4 @@ if num.lstrip("-").isnumeric():
     else:
         print(f"Your number is {num}")                                                                                                 
 else:
-    print(f"{num} is not an integer")
+    print(f"{num} is not an integer")           

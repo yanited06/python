@@ -12,7 +12,7 @@ while True:
 for temp in temp_list:
     if temp < 34:
         print("too cold")
-    elif temp >= 34 and temp <= 42
+    elif temp >= 34 and temp <= 42:
         print("just right")
     else:
         print("too hot")
